@@ -100,7 +100,7 @@ USE_TZ = True
 # ── Fichiers statiques (Whitenoise) ───────────────────────────────────────────
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
-STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedStaticFilesStorage'
 
 # ── Fichiers media (Cloudinary en prod, local en dev) ─────────────────────────
 CLOUDINARY_URL = env('CLOUDINARY_URL', '')
